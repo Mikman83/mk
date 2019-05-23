@@ -1,0 +1,267 @@
+.page-header {
+  padding: 20px 0;
+
+  @media (max-width: $screen-sm) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: $screen-xs) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-block-item {
+
+    @media (max-width: $screen-xxl) {
+      width: 95px;
+    }
+
+    @media (max-width: $screen-xl) {
+      width: 80px;
+    }
+
+    @media (max-width: $screen-lg) {
+      width: 60px;
+    }
+  }
+
+  &__logo-block-descr {
+    margin-left: 35px;
+
+    @media (max-width: $screen-xxl) {
+      font-size: 17px;
+      margin-left: 25px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 16px;
+      margin-left: 15px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 13px;
+      margin-left: 10px;
+    }
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  &__menu {
+
+    @media (max-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__menu-list {
+    list-style: none;
+    margin: 0 -20px;
+    padding: 0;
+  }
+
+  &__menu-item {
+    display: inline-block;
+    padding: 0 20px;
+
+    @media (max-width: $screen-xxl) {
+      padding: 0 10px;
+    }
+
+    @media (max-width: $screen-xl) {
+      padding: 0 5px;
+    }
+
+    @media (max-width: $screen-lg) {
+      padding: 0 3px;
+    }
+  }
+
+  &__menu-item a {
+    text-decoration: none;
+
+    @media (max-width: $screen-xxl) {
+      font-size: 17px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 14px;
+    }
+  }
+
+  &__menu-item a:hover {
+    color: $blue-light;
+  }
+
+  &__contacts {
+
+    @media (max-width: $screen-xxl) {
+      font-size: 17px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 14px;
+    }
+
+    @media (max-width: $screen-sm) {
+      font-size: 13px;
+    }
+  }
+
+  &__tel {
+    font-size: 0;
+  }
+
+  &__tel a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+    pointer-events: none;
+
+    @media (max-width: $screen-xxl) {
+      font-size: 19px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 18px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $screen-md) {
+      pointer-events: auto;
+    }
+
+    @media (max-width: $screen-sm) {
+      font-size: 14px;
+    }
+  }
+
+  &__tel a,
+  &__time {
+    text-align: right;
+  }
+
+  &__tel-wu,
+  &__tel-vb,
+  &__tel-img,
+  &__time-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+
+    @media (max-width: $screen-xxl) {
+      margin: 0 4px;
+    }
+
+    @media (max-width: $screen-md) {
+      margin: 0 2px;
+    }
+  }
+
+  &__tel-wu {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/header/whats-up.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $screen-md) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &__tel-vb {
+    width: 22px;
+    height: 24px;
+    background-image: url(../img/header/viber.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $screen-md) {
+      width: 18px;
+      height: 19px;
+    }
+  }
+
+  &__tel-img {
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/header/tel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $screen-md) {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__time-img {
+    width: 17px;
+    height: 18px;
+    background-image: url(../img/header/time.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $screen-md) {
+      width: 14px;
+      height: 15px;
+    }
+  }
+
+  &__callback a {
+    color: $blue-light;
+    text-decoration: none;
+    width: fit-content;
+    border-bottom: 1px dashed $blue-light;
+
+    @media (max-width: $screen-xxl) {
+      font-size: 17px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 14px;
+    }
+
+    @media (max-width: $screen-sm) {
+      font-size: 13px;
+    }
+  }
+
+  &__callback {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

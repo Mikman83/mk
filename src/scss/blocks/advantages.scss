@@ -1,0 +1,153 @@
+.advantages {
+  background-image: url(../img/promo/advantages-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: auto 100%;
+  color: #fff;
+
+  &__title {
+    width: 920px;
+    font-weight: 700;
+    padding-top: 60px;
+
+    @media (max-width: $screen-xxl) {
+      width: 800px;
+    }
+
+    @media (max-width: $screen-xl) {
+      width: 710px;
+    }
+
+    @media (max-width: $screen-lg) {
+      width: 580px;
+    }
+
+    @media (max-width: $screen-md) {
+      width: 100%;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding-top: 45px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__title h2 {
+    font-size: 38px;
+
+    @media (max-width: $screen-xxl) {
+      font-size: 34px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 30px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 24px;
+    }
+
+    @media (max-width: $screen-md) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $screen-sm) {
+      font-size: 18px;
+    }
+  }
+
+  &__list {
+    font-size: 22px;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px;
+
+    @media (max-width: $screen-xxl) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 18px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 14px;
+    }
+
+    // @media (max-width: $screen-md) {
+    //   font-size: 20px;
+    // }
+
+    @media (max-width: $screen-sm) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__list-item {
+    padding: 6px 0;
+  }
+
+  &__list-item--appraiser:before,
+  &__list-item--benefit:before,
+  &__list-item--payment:before {
+    content: '';
+    display: inline-block;
+    margin-right: 25px;
+    vertical-align: middle;
+
+    @media (max-width: $screen-sm) {
+      margin-right: 10px;
+    }
+  }
+
+  &__list-item--appraiser:before {
+    width: 44px;
+    height: 43px;
+    background-image: url(../img/promo/adv-i1.png);
+  }
+
+  &__list-item--benefit:before {
+    width: 43px;
+    height: 50px;
+    background-image: url(../img/promo/adv-i2.png);
+  }
+
+  &__list-item--payment:before {
+    width: 43px;
+    height: 39px;
+    background-image: url(../img/promo/adv-i3.png);
+  }
+
+  &__lead-form {
+    padding: 50px 0;
+  }
+
+  &__lead-form-item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 845px;
+    height: 160px;
+    padding: 25px 35px;
+
+    @media (max-width: $screen-xxl) {
+      width: 775px;
+    }
+
+    @media (max-width: $screen-xl) {
+      width: 685px;
+      height: 140px;
+    }
+
+    @media (max-width: $screen-lg) {
+      width: 550px;
+    }
+
+    @media (max-width: $screen-sm) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

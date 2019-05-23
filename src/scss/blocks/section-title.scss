@@ -1,0 +1,47 @@
+.section-title {
+
+  & h2 {
+    font-size: 48px;
+
+    @media (max-width: $screen-xxl) {
+      font-size: 44px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 40px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 38px;
+    }
+
+    @media (max-width: $screen-md) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $screen-sm) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $screen-xs) {
+      font-size: 22px;
+    }
+  }
+
+  & h2:after {
+    content: '';
+    display: block;
+    width: 145px;
+    height: 3px;
+    background-color: $blue-light;
+
+    @media (max-width: $screen-lg) {
+      width: 120px;
+    }
+
+    @media (max-width: $screen-md) {
+      width: 110px;
+      height: 2px;
+    }
+  }
+}

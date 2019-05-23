@@ -1,0 +1,313 @@
+.lead-form {
+
+  &__title {
+    position: relative;
+  }
+
+  &__title h3 {
+    font-size: 30px;
+    margin: 0;
+
+    @media (max-width: $screen-xxl) {
+      font-size: 26px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 24px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 18px;
+    }
+  }
+
+  &__title--end h3 {
+    width: fit-content;
+    text-align: right;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  &__title--start h3 {
+    width: fit-content;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  &__title-arrow:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 173px;
+    height: 35px;
+    background-image: url(../img/purchase/arrow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -75px;
+    bottom: 20px;
+
+    @media (max-width: $screen-xl) {
+      left: -80px;
+      bottom: 10px;
+    }
+
+    @media (max-width: $screen-md) {
+      width: 110px;
+      height: 22px;
+      left: -110px;
+      bottom: 10px;
+      display: none;
+    }
+  }
+
+  &__title-arrow-start:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 173px;
+    height: 35px;
+    background-image: url(../img/purchase/arrow-start.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: -75px;
+    bottom: 20px;
+
+    @media (max-width: $screen-xxl) {
+      right: -45px;
+      bottom: 10px;
+    }
+
+    @media (max-width: $screen-xl) {
+      width: 110px;
+      height: 22px;
+      right: 15px;
+      bottom: 7px;
+    }
+
+    @media (max-width: $screen-md) {
+      left: -110px;
+      bottom: 10px;
+      display: none;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: auto;
+
+    &--end {
+      justify-content: flex-end;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding-top: 10px;
+    }
+  }
+
+  &__tel {
+    margin-right: 12px;
+
+    &--start {
+
+      @media (max-width: $screen-md) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &--verticle {
+
+      @media (max-width: $screen-md) {
+        margin-right: 0;
+        margin-left: auto;
+        margin-bottom: 10px;
+      }
+    }
+
+    &--mb {
+
+      @media (max-width: $screen-xs) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &--start-verticle {
+
+      @media (max-width: $screen-md) {
+        margin-right: auto;
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__tel-input {
+    width: 280px;
+    height: 45px;
+    border: none;
+
+    @media (max-width: $screen-xxl) {
+      width: 250px;
+    }
+
+    @media (max-width: $screen-xl) {
+      width: 220px;
+      height: 40px;
+    }
+
+    @media (max-width: $screen-lg) {
+      width: 170px;
+      height: 30px;
+    }
+
+    &--border {
+      border: 2px solid #b6c5d1;
+    }
+  }
+
+  &__file {
+    order: 1;
+    position: relative;
+  }
+
+  &__file-icon {
+    display: inline-block;
+    background-image: url(../img/promo/file-btn.png);
+    background-size: cover;
+    width: 37px;
+    height: 37px;
+    margin-right: 15px;
+
+    @media (max-width: $screen-xl) {
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+    }
+
+    @media (max-width: $screen-lg) {
+      width: 25px;
+      height: 25px;
+      margin-right: 0;
+    }
+  }
+
+  &__file:hover &__file-icon {
+    background-image: url(../img/promo/file-btn1.png);
+  }
+
+  &__file-descr {
+    display: inline-block;
+    width: 110px;
+    font-size: 16px;
+    text-decoration: underline;
+
+    @media (max-width: $screen-xl) {
+      width: 90px;
+      font-size: 13px;
+    }
+
+    @media (max-width: $screen-xl) {
+      width: 80px;
+      font-size: 12px;
+    }
+  }
+
+  &__file-input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__btn {
+    margin-right: 25px;
+
+    @media (max-width: $screen-xl) {
+      margin-right: 20px;
+    }
+
+    @media (max-width: $screen-lg) {
+      margin-right: 15px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 10px;
+    }
+
+    &--verticle {
+
+      @media (max-width: $screen-md) {
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
+
+    &--end {
+      margin-right: 0;
+    }
+  }
+
+  &__btn-item {
+    position: relative;
+    border: none;
+    background-image: url(../img/promo/btn-form.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 280px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 1;
+    outline: none;
+
+    &:hover {
+      background-image: url(../img/promo/btn-form-hover.png);
+    }
+
+    @media (max-width: $screen-xxl) {
+      width: 250px;
+    }
+
+    @media (max-width: $screen-xl) {
+      width: 220px;
+      height: 40px;
+    }
+
+    @media (max-width: $screen-lg) {
+      width: 170px;
+      height: 30px;
+    }
+  }
+
+  &__btn-item:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 220px;
+    height: 51px;
+    background-image: url(../img/promo/btn-shadow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 30px;
+    top: 18px;
+
+    @media (max-width: $screen-xxl) {
+      left: 15px;
+    }
+
+    @media (max-width: $screen-xl) {
+      left: 0;
+      top: 16px;
+    }
+
+    @media (max-width: $screen-lg) {
+      width: 170px;
+      left: 0;
+      top: 6px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.purchase {
+  background: linear-gradient(to bottom, #ebebec 0%, #f7f7f8 50%, #fcfcfc 51%, #fcfcfc 100%);
+
+  @media (max-width: $screen-sm) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

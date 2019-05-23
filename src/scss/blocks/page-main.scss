@@ -1,0 +1,19 @@
+.page-main {
+  margin: 0 auto;
+  width: 1200px;
+  margin-top: 45px;
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__picture {
+    width: 645px;
+  }
+
+  &__content {
+    width: 350px;
+  }
+}

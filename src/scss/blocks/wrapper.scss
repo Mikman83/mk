@@ -1,0 +1,28 @@
+.wrapper {
+  width: 1580px;
+  margin: 0 auto;
+
+  @media (max-width: $screen-xxl) {
+    width: 1380px;
+  }
+
+  @media (max-width: $screen-xl) {
+    width: 1200px;
+  }
+
+  @media (max-width: $screen-lg) {
+    width: 950px;
+  }
+
+  @media (max-width: $screen-md) {
+    width: 720px;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 100%;
+  }
+
+  @media (max-width: $screen-xs) {
+    width: 100%;
+  }
+}

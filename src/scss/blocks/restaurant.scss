@@ -1,0 +1,212 @@
+.restaurant {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+
+  @media (max-width: $screen-sm) {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  &__title h3 {
+    font-size: 40px;
+
+    @media (max-width: $screen-xxl) {
+      font-size: 38px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 36px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $screen-md) {
+      font-size: 22px;
+    }
+
+    @media (max-width: $screen-sm) {
+      font-size: 20px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  &__list-item {
+    font-size: 30px;
+    margin-bottom: 13px;
+
+    @media (max-width: $screen-xxl) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 22px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $screen-md) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $screen-sm) {
+      font-size: 18px;
+    }
+
+    &--worm:before {
+      background-image: url(../img/purchase/worm.png);
+      background-size: cover;
+      vertical-align: middle;
+    }
+
+    &--worm:hover:before {
+      background-image: url(../img/purchase/worm-hover.png);
+    }
+
+    &--ice:before {
+      background-image: url(../img/purchase/ice.png);
+      background-size: cover;
+      vertical-align: middle;
+    }
+
+    &--ice:hover:before {
+      background-image: url(../img/purchase/ice-hover.png);
+    }
+
+    &--tech:before {
+      background-image: url(../img/purchase/tech.png);
+      background-size: cover;
+      vertical-align: middle;
+    }
+
+    &--tech:hover:before {
+      background-image: url(../img/purchase/tech-hover.png);
+    }
+
+    &--bread:before {
+      background-image: url(../img/purchase/bread.png);
+      background-size: cover;
+      vertical-align: middle;
+    }
+
+    &--bread:hover:before {
+      background-image: url(../img/purchase/bread-hover.png);
+    }
+
+    &--pizza:before {
+      background-image: url(../img/purchase/pizza.png);
+      background-size: cover;
+      vertical-align: middle;
+    }
+
+    &--pizza:hover:before {
+      background-image: url(../img/purchase/pizza-hover.png);
+    }
+
+    &--dish:before {
+      background-image: url(../img/purchase/dish.png);
+      background-size: cover;
+      vertical-align: middle;
+    }
+
+    &--dish:hover:before {
+      background-image: url(../img/purchase/dish-hover.png);
+    }
+
+    &--etc:before {
+      background-image: url(../img/purchase/etc.png);
+      background-size: cover;
+      vertical-align: middle;
+    }
+
+    &--etc:hover:before {
+      background-image: url(../img/purchase/etc-hover.png);
+    }
+  }
+
+  &__list-item span {
+    color: $blue-light;
+  }
+
+  &__list-item:before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+
+    @media (max-width: $screen-xl) {
+      width: 45px;
+      height: 45px;
+      margin-right: 20px;
+    }
+
+    @media (max-width: $screen-md) {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $screen-xl) {
+      width: 490px;
+    }
+
+    @media (max-width: $screen-lg) {
+      width: 415px;
+    }
+
+    @media (max-width: $screen-md) {
+      width: 290px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-top: 30px;
+    }
+  }
+
+  &__picture-item {
+    width: 350px;
+    height: 450px;
+    margin: auto;
+    background-image: url(../img/purchase/furniture/worm.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    @media (max-width: $screen-xxl) {
+      // font-size: 38px;
+    }
+
+    @media (max-width: $screen-xl) {
+      width: 300px;
+      height: 360px;
+    }
+
+    @media (max-width: $screen-lg) {
+      width: 250px;
+      height: 350px;
+    }
+
+    @media (max-width: $screen-md) {
+      width: 200px;
+      height: 250px;
+    }
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+}

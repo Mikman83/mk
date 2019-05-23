@@ -1,0 +1,78 @@
+.discount {
+  background-image: url(../img/discount/discount-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: auto 100%;
+  color: #fff;
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 45px 0;
+
+    @media (max-width: $screen-md) {
+      padding: 20px 0;
+    }
+
+    @media (max-width: $screen-sm) {
+      flex-direction: column;
+      padding: 20px 15px;
+    }
+  }
+
+  &__descr {
+    font-size: 48px;
+    width: 805px;
+    margin: auto 0;
+
+    @media (max-width: $screen-xxl) {
+      font-size: 42px;
+      width: 710px;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 36px;
+      width: 610px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 32px;
+      width: 550px;
+    }
+
+    @media (max-width: $screen-md) {
+      font-size: 26px;
+      width: 585px;
+    }
+
+    @media (max-width: $screen-sm) {
+      width: 100%;
+      font-size: 28px;
+    }
+
+    @media (max-width: $screen-xs) {
+      font-size: 22px;
+    }
+  }
+
+  &__descr p {
+    margin: auto 0;
+  }
+
+  &__descr span {
+    color: $blue-light;
+  }
+
+  &__lead-form {
+    display: flex;
+
+    @media (max-width: $screen-xs) {
+      margin-top: 30px;
+    }
+  }
+
+  &__form-item {
+    margin: auto 0;
+  }
+}
